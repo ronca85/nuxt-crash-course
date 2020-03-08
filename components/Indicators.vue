@@ -2,12 +2,12 @@
 	<div>
 		<div class="indicators__left"></div>
 		<div class="indicators__right"></div>
-		<button class="indicators__button-left" @click="handleIndicatorControls">
+		<button class="indicators__button-left">
 			<svg class="arrow_left" width="24" height="24" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
 				<path d="M14.5 12L7 19.5L8.5 21L17.5 12L8.5 3L7 4.5L14.5 12Z" />
 			</svg>
 		</button>
-		<button class="indicators__button-right" @click="handleIndicatorControls">
+		<button class="indicators__button-right">
 			<svg class="arrow_right" width="24" height="24" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
 				<path d="M14.5 12L7 19.5L8.5 21L17.5 12L8.5 3L7 4.5L14.5 12Z" />
 			</svg>
@@ -17,16 +17,10 @@
 
 <script>
 export default {
-	methods: {
-		handleIndicatorControls() {
-			console.log(this);
-		}
-	}
 }
 </script>
 
 <style lang="scss" scoped>
-
 .indicators {
 	position: absolute;
 	top: 0;
